@@ -133,6 +133,16 @@ html{
         font-family: 'Oswald', sans-serif;
         font-size: 60px;
     }
+    .img-text{
+        display: flex;
+        color: #ffffff;
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        flex-direction: column;
+        transform: translateY(100px);
+        transition: 3s;
+        opacity: 0;
+    }
 }
 
 .show{
