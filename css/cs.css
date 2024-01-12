@@ -1,0 +1,122 @@
+.first-part-data{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0)),url(../img/worldmap.jpg);
+   background-repeat: none;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+   object-fit: cover;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   vertical-align: middle;
+}
+
+
+.first-part-text{
+   color: #ffffff;
+   font-size: 100px;
+   font-family: 'Oswald', sans-serif;
+   text-align: center;
+   display: flex;
+   animation: glow 1s ease-in-out infinite alternate;
+   transform: translateX(-100%);
+   transition: 3s;
+   opacity: 0;
+}
+
+@keyframes glow {
+   from {
+     text-shadow: 0 0 10px #999999, 0 0 20px #999999, 0 0 30px #999999, 0 0 40px #999999, 0 0 50px #999999, 0 0 60px #999999, 0 0 70px #999999;
+   }
+   
+   to {
+     text-shadow: 0 0 20px #adadad, 0 0 30px #adadad, 0 0 40px #adadad, 0 0 50px #adadad, 0 0 60px #adadad, 0 0 70px #adadad, 0 0 80px #adadad;
+   }
+ }
+
+.first-part-img{
+   width: 100%;
+   -webkit-animation: mover 2s infinite  alternate;
+   animation: mover 2s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+   0% { transform: translateY(40px); }
+   100% { transform: translateY(-50px); }
+}
+@keyframes mover {
+   0% { transform: translateY(40px); }
+   100% { transform: translateY(-50px); }
+}
+
+.card-gcs{
+   transform: translateY(100%);
+   transition: 2s;
+}
+
+.card-paragraph{
+   background-color: #191A19;
+}
+
+.card{
+   transition: 2s;
+}
+.card:hover{
+   background-color: #414040;
+   color: #ffffff;
+}
+
+.card-title-gcs{
+   font-size: 60px;
+   font-family: 'Oswald', sans-serif;
+}
+
+.card-title-gcs2{
+   font-size: 60px;
+   font-family: 'Oswald', sans-serif;
+}
+
+.card-sub-gcs{
+   font-size: 20px;
+   font-family: 'Questrial', sans-serif;
+   text-align: justify;
+}
+
+
+@media (max-width: 1999px){
+
+   .card-title-gcs2{
+      font-size: 40px;
+      font-family: 'Oswald', sans-serif;
+   }
+}
+
+
+@media (max-width: 504px){
+   .card-title-gcs{
+      font-size: 60px;
+      font-family: 'Oswald', sans-serif;
+      text-align: center;
+   }
+
+   .card-title-gcs2{
+      font-size: 30px;
+      font-family: 'Oswald', sans-serif;
+   }
+}
+
+.second-part{
+   background-color: #191A19;
+}
+
+.second-part-data{
+   transform: translateX(-100%);
+   transition: 3s;
+}
+
+.show{
+   transform: translateX(0);
+   transform: translateY(0);
+   opacity: 1;
+}

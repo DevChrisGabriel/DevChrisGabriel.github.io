@@ -1,0 +1,229 @@
+.front-page .carousel-item{
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.front-page-img1{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0)), url(/img/global_society.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+}
+
+.front-page-img2{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0)), url(/img/human_rights.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+}
+
+.front-page-img3{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0)), url(/img/global_citizen.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+}
+
+.video-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    color: #fff;
+}
+
+.video-sub{
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-align: justify;
+}
+
+.btn-vid{
+    background-color: #a8000e;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    width: 30%;
+  }
+
+  .btn-vid:hover{
+    background-color: #690009;
+    color: white;
+  }
+
+  @media (max-width: 1999px){
+    .video-title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 80px;
+        color: #fff;
+    }
+    
+    .video-sub{
+        font-family: 'Questrial', sans-serif;
+        font-size: 20px;
+        color: #fff;
+        text-align: justify;
+    }
+    
+    .btn-vid{
+        background-color: #a8000e;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        width: 40%;
+      }
+    
+      .btn-vid:hover{
+        background-color: #690009;
+        color: white;
+      }
+  }
+
+  @media (max-width: 991px){
+    .video-title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 60px;
+        color: #fff;
+    }
+    
+    .video-sub{
+        font-family: 'Questrial', sans-serif;
+        font-size: 15px;
+        color: #fff;
+        text-align: justify;
+    }
+    
+    .btn-vid{
+        background-color: #a8000e;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        width: 45%;
+      }
+    
+      .btn-vid:hover{
+        background-color: #690009;
+        color: white;
+      }
+  }
+  
+  @media (max-width: 361px){
+    .video-title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        color: #fff;
+    }
+    
+    .video-sub{
+        font-family: 'Questrial', sans-serif;
+        font-size: 15px;
+        color: #fff;
+        text-align: justify;
+    }
+    
+    .btn-vid{
+        background-color: #a8000e;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        width: 70%;
+      }
+    
+      .btn-vid:hover{
+        background-color: #690009;
+        color: white;
+      }
+  }
+
+
+.disclaimer{
+    background-color: #191a19;
+    padding-bottom: 100px;
+}
+
+.main-disclaimer{
+    font-family: 'Oswald',sans-serif;
+    color: #fff;
+    font-size: 120px;
+}
+
+.sub-text{
+    font-family: 'Questrial',sans-serif;
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.films-section{
+    background-color: #191a19;
+}
+
+.main-film-text{
+    font-size: 120px;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
+
+
+.thumbnail{
+    position: relative;
+}
+
+.thumbnail-image{
+    width: 100%;
+    display: block;    
+    margin: auto;   
+    cursor: pointer;              
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.content:hover{
+    opacity: 1;
+}
+
+
+.cover-title{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.cover-sub{
+    color: #fff;
+    font-family: 'Questrial', sans-serif;
+    text-align: justify;
+}

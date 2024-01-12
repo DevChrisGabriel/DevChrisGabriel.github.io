@@ -1,0 +1,26 @@
+
+
+.covers-card{
+    width: 100%;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.covers-card:hover{
+    width: 95%;
+}
+
+
+
+.covers-bg{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.covers-bg:hover{
+    width: 95%;
+}

@@ -1,0 +1,318 @@
+/*html scroll-behavior */
+html{
+    scroll-behavior: smooth;
+}
+/*end of html scroll-behavior */
+
+/*navbar*/
+.navbar{
+    background-color: #000000;
+}
+
+.navbar .logo{
+    width: 60px;
+    padding: 0;
+    padding-top: 0;
+    margin: 0;
+    top: 0;
+}
+
+
+.navbar .nav-item .nav-color{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar .nav-item .nav-color:after{
+    display:block;
+    content: '';
+    border-bottom: solid 2px #a8000e;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.navbar .nav-item .nav-color:hover:after{ 
+    transform: scaleX(1);  
+}
+
+.navbar-toggler{
+    border-color: white !important;
+    border-width: 2px !important;
+}
+.nav-icon{
+    color: white;
+    font-size: 40px;
+}
+
+.dropdown .dropdown-menu {
+    transform: translateX(-60%);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: block;
+    position: absolute;
+    pointer-events: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateX(-30%);
+    transition: 0.5s ease-in-out;
+    pointer-events: auto;
+}
+
+.about_us .nav-link{
+    font-family: 'Oswald', sans-serif;
+    color: #012231;
+    transition: 0.5s;
+    background-color: white;
+    border-radius: 20px;
+    width: 100px;
+    justify-content: center;
+    display: flex;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.about_us .nav-link:hover{
+    color: white;
+    background-color: #a8000e;
+}
+
+.toggle{
+    border-color: rgb(0, 0, 0) !important;
+    border-width: 2px !important;
+}
+
+
+.about-us-color{
+    background-color: #0f080898 !important;
+}
+.about-us-modal{
+    background-color: #03030398 !important;
+    color: #ffffff;
+}
+
+.about-us-main{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+}
+
+.about-us-sub{
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+}
+
+/*end of navbar*/
+/*navbar-onscroll*/
+.navbar-container{
+    position: fixed;
+    top: -400px;
+    transition: top 0.6s; 
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.navbar-onscroll{
+    background-color: #ffffff;
+}
+
+.nav-color_light{
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+
+.navbar .nav-item .nav-color_light:after{
+    display:block;
+    content: '';
+    border-bottom: solid 2px #a8000e;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.navbar .nav-item .nav-color_light:hover:after{ 
+    transform: scaleX(1);  
+}
+
+
+.about_us_light .nav-link_light{
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    transition: 0.5s;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 100px;
+    justify-content: center;
+    display: flex;
+    transition: 0.5s;
+    cursor: pointer;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+}
+.about_us_light .nav-link_light:hover{
+    color: white;
+    background-color: #a8000e;
+}
+
+.nav-icon_light{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+/*end of navbar-onscroll*/
+
+
+
+/*modal covers*/
+.modal-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    
+}
+
+
+.modal-body{
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn{
+    background-color: #a8000e;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+}
+
+.close-btn:hover{
+    background-color: #58030a;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+}
+
+.topic-card-holder{
+    align-items: center;
+    justify-content: center;
+}
+
+.topic-card{
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #ffffff00 !important;
+}
+
+
+.topic-card-img{
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    width: 330px;
+}
+
+.topic-card-img:hover{
+    align-items: center;
+    width:360px;
+
+}
+
+
+@media (max-width: 1200px) and (min-width: 992px){
+    .card-img{
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        width: 100%;
+    }
+    
+    .card-img:hover{
+        align-items: center;
+        width:265px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 767px){
+    .card-img{
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        width: 100%;
+    }
+    
+    .card-img:hover{
+        align-items: center;
+        width:160px;
+    
+    }
+}
+/*end of modal covers*/
+
+
+
+/*navbar media query*/
+@media (max-width:991px){
+    .navbar .nav-item .nav-color{
+        width: 50px
+    }
+
+    .navbar-onscroll .nav-item .nav-color_light{
+        width: 50px
+    }
+    .navbar .nav-item .nav-color:after{
+        display:block;
+        content: '';
+        border-bottom: solid 3px #a8000e;  
+        width: 0;
+        transition: width 250ms ease-in-out;
+    }
+    
+    .navbar .nav-item .nav-color:hover:after{ 
+        width: 100%;
+    }
+
+    .navbar-onscroll .nav-item .nav-color_light:after{
+        display:block;
+        content: '';
+        border-bottom: solid 3px #a8000e;  
+        width: 0;
+        transition: width 250ms ease-in-out;
+    }
+    
+    .navbar-onscroll .nav-item .nav-color_light:hover:after{ 
+        width: 100%;
+    }
+    
+    
+    .register{
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        width: 70px;
+        justify-content: center;
+        margin-left: -10px;
+    }
+    
+    .dropdown .dropdown-menu {
+        display: none;
+    }
+
+}
+
+@media (max-width:767px){
+    .first-section-text{
+        font-family: 'PT Sans', sans-serif;
+        color: white;
+        text-align: center;
+    }
+    
+    .first-section-paragraph{
+        font-family: 'PT Sans', sans-serif;
+        color: white;
+        text-align: center;
+    }    
+}
+/*end of navbar media query*/
